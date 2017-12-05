@@ -51,7 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Hasegawa\script\Move_Player.cs" />
+     <Compile Include="Assets\Hasegawa\script\Player\P1_Move.cs" />
+     <Compile Include="Assets\Hasegawa\script\Player\P2_Jump.cs" />
+     <Compile Include="Assets\Hasegawa\script\Player\P3_Puddle.cs" />
      <Compile Include="Assets\Hasegawa\script\TitleButtonControl.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
