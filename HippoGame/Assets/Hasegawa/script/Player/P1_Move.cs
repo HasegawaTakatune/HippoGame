@@ -5,7 +5,7 @@ using UnityEngine;
 public class P1_Move : MonoBehaviour {
 
 	// 速度
-	public float movespd = .2f;
+	[SerializeField]float movespd = .2f;
 	// Transform格納
 	Transform trans;
 

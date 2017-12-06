@@ -5,9 +5,9 @@ using UnityEngine;
 public class P2_Jump : MonoBehaviour {
 
 	// ジャンプ速度
-	public float jumpspd = 1;
+	[SerializeField] float jumpspd = 1;
 	// ジャンプ高さ
-	public float jumpheight = 1;
+	[SerializeField] float jumpheight = 1;
 	// 天井
 	float ceiling;
 	// ジャンプ中判定

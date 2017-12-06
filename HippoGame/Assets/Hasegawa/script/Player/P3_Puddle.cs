@@ -5,7 +5,7 @@ using UnityEngine;
 public class P3_Puddle : MonoBehaviour {
 
 	// スリップ速度
-	public float slidespd = .1f;
+	[SerializeField] float slidespd = .1f;
 	// Transform格納
 	Transform trans;
 
