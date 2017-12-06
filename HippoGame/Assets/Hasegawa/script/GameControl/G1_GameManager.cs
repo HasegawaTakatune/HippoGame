@@ -6,8 +6,12 @@ using UnityEngine.UI;
 
 public class G1_GameManager : MonoBehaviour {
 
+	// スリップ速度
 	public float slidespd = .1f;
 
+	/// <summary>
+	/// 初期化
+	/// </summary>
 	void Awake(){
 		// シーンをまたいでもオブジェクトが削除されない処理
 		DontDestroyOnLoad (gameObject);
@@ -15,31 +19,39 @@ public class G1_GameManager : MonoBehaviour {
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 
+	/// <summary>
+	/// シーンがロードされた際のロールバック
+	/// </summary>
 	void OnSceneLoaded(Scene scene,LoadSceneMode sceneMode){
-		Button button;
 
-		if (null != (button = GameObject.Find ("StartButton").GetComponent<Button> ())) {
-			button.onClick.AddListener (() => GameStart ());
-			button = null;
+		// シーンに設置されているボタンに制御を加えていく
+		foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Button")) {
+			if (obj.name == "StartButton")
+				obj.GetComponent<Button> ().onClick.AddListener (() => GameStart ());
+			else if (obj.name == "ExitButton")
+				obj.GetComponent<Button> ().onClick.AddListener (() => GameEnd ());
+			else if (obj.name == "TitleButton")
+				obj.GetComponent<Button> ().onClick.AddListener (() => GameTitle ());
 		}
-		/*if (null != (button = GameObject.Find ("ExitButton").GetComponent<Button> ())) {
-			button.onClick.AddListener (() => GameEnd ());
-			button = null;
-		}
-		if (null != (button = GameObject.Find ("TitleButton").GetComponent<Button> ())) {
-			button.onClick.AddListener (() => GameTitle ());
-			button = null;
-		}*/
 	}
 
+	/// <summary>
+	/// メインゲームのシーンに移動
+	/// </summary>
 	public void GameStart(){
 		SceneManager.LoadScene ("Main");
 	}
 
+	/// <summary>
+	/// ゲームを終了して、ウィンドウを閉じる
+	/// </summary>
 	public void GameEnd(){
 		Application.Quit ();
 	}
 
+	/// <summary>
+	/// ゲームタイトルのシーンに移動
+	/// </summary>
 	public void GameTitle(){
 		SceneManager.LoadScene ("Title");
 	}
