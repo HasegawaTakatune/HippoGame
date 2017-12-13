@@ -51,11 +51,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Hasegawa\script\Enemy\E1_Move.cs" />
+     <Compile Include="Assets\Hasegawa\script\Enemy\E3_Sweat.cs" />
+     <Compile Include="Assets\Hasegawa\script\Enemy\E4_Puddle.cs" />
+     <Compile Include="Assets\Hasegawa\script\Enemy\E5_Rock.cs" />
+     <Compile Include="Assets\Hasegawa\script\Enemy\myConst.cs" />
      <Compile Include="Assets\Hasegawa\script\GameControl\G1_GameManager.cs" />
      <Compile Include="Assets\Hasegawa\script\Player\P1_Move.cs" />
      <Compile Include="Assets\Hasegawa\script\Player\P2_Jump.cs" />
      <Compile Include="Assets\Hasegawa\script\Player\P3_Puddle.cs" />
-     <Compile Include="Assets\Hasegawa\script\TitleButtonControl.cs" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -77,6 +82,10 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{347163DF-D6CB-303C-49B0-8E34EA9B2499}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
