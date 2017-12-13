@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class G1_GameManager : MonoBehaviour {
 
-	// スリップ速度
-	public float slidespd = .1f;
+	[SerializeField]
+	private float slidespd = .1f;	// スライド速度
+	public float GetSlideSpd{get{ return slidespd; }}
 
 	/// <summary>
 	/// 初期化
@@ -54,5 +55,6 @@ public class G1_GameManager : MonoBehaviour {
 	/// </summary>
 	public void GameTitle(){
 		SceneManager.LoadScene ("Title");
+		Destroy (this.gameObject);
 	}
 }

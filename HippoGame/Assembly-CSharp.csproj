@@ -51,7 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Hasegawa\script\GameControl\G1_GameManager.cs" />
+     <Compile Include="Assets\Aikei\Scripts\G1_GameManager.cs" />
+     <Compile Include="Assets\Aikei\Scripts\G4_EnemyMeasure.cs" />
+     <Compile Include="Assets\Aikei\Scripts\G6_Slide.cs" />
+     <Compile Include="Assets\Aikei\Scripts\RayTest.cs" />
      <Compile Include="Assets\Hasegawa\script\Player\P1_Move.cs" />
      <Compile Include="Assets\Hasegawa\script\Player\P2_Jump.cs" />
      <Compile Include="Assets\Hasegawa\script\Player\P3_Puddle.cs" />
