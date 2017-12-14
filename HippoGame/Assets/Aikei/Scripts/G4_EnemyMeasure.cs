@@ -10,6 +10,14 @@ public class G4_EnemyMeasure : MonoBehaviour {
 	[SerializeField]
 	Text EMText;
 
+	GameObject Player;
+	GameObject Enemy;
+
+	void Start(){
+		Player = GameObject.FindGameObjectWithTag ("Player");
+		Enemy = GameObject.FindGameObjectWithTag ("Enemy");
+	}
+
 	void Update(){
 		Measure ();
 	}
