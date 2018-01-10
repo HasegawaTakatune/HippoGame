@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class G6_Slide : MonoBehaviour {
+public class G7_Slide : MonoBehaviour {
 
 
 	float slidespd=0;	//このオブジェクトのスライド量を保存する
@@ -12,7 +12,7 @@ public class G6_Slide : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//このオブジェクトのスライド速度をGameManagerから参照する
-		slidespd=GameObject.Find("GameManager").GetComponent<G1_GameManager> ().GetSlideSpd;
+		slidespd=GameObject.FindGameObjectWithTag("GameManager").GetComponent<G1_GameManager> ().GetSlideSpd;
 
 		//このオブジェクトのTransformを格納する
 		trans = this.gameObject.transform;
