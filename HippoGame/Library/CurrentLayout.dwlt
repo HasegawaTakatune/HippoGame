@@ -71,7 +71,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1382
+  controlID: 497
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 442}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 1295
+  controlID: 518
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 1203
+  controlID: 593
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -366,9 +366,9 @@ MonoBehaviour:
     height: 382
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 86260000
     m_LastClickedID: 0
-    m_ExpandedIDs: dac3ffff3cfbffff00000000
+    m_ExpandedIDs: dac3ffff3cfbffffb2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -462,19 +462,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Kawabata/Prefab
+    - Assets/Hasegawa/script/Enemy
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Kawabata/Prefab
+  - Assets/Hasegawa/script/Enemy
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\nwuser.DA\\Downloads\\413\\\uFF13A\\\u30B2\u30FC\u30E0\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u2162\\k08_\u30B2\u30FC\u30E0\u30B8\u30E3\u30E003\\3Algo3\\HippoGame\\HippoGame"
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c270000
-    m_LastClickedID: 10108
-    m_ExpandedIDs: 00000000502700005e270000662700007a27000000ca9a3bffffff7f
+    m_SelectedIDs: e4260000
+    m_LastClickedID: 9956
+    m_ExpandedIDs: 0000000096260000ae260000ba260000e226000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,7 +502,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000502700005e270000662700007a27000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000096260000ae260000ba260000e226000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -600,8 +600,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -613,18 +613,18 @@ MonoBehaviour:
       y: 17
       width: 723
       height: 301
-    m_Scale: {x: 0.3919271, y: 0.3919271}
-    m_Translation: {x: 361.5, y: 150.5}
+    m_Scale: {x: 1.304773, y: 1.304773}
+    m_Translation: {x: 668.04376, y: 501.03284}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -922.3654
+      x: -512
       y: -384
-      width: 1844.7308
-      height: 768
+      width: 554.1194
+      height: 230.69147
     m_MinimalGUI: 1
   m_defaultScale: 0.3919271
   m_TargetTexture: {fileID: 0}
@@ -665,9 +665,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -0.6986275, y: 2.4718008, z: -6.340235}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -0.6986275, y: 2.4718008, z: -6.340235}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -694,9 +694,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.15074997, y: 0.71562994, z: -0.1628938, w: -0.66227925}
   m_Size:
-    m_Target: 40.49579
+    m_Target: 14.586889
     speed: 2
-    m_Value: 40.49579
+    m_Value: 14.586889
   m_Ortho:
     m_Target: 0
     speed: 2
