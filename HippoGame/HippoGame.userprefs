@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Hasegawa\script\Enemy\E1_Move.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Hasegawa\script\ObjectList.cs">
     <Files>
-      <File FileName="Assets\Hasegawa\script\Enemy\E1_Move.cs" Line="131" Column="10" />
-      <File FileName="Assets\Hasegawa\script\Enemy\E4_Puddle.cs" Line="26" Column="3" />
+      <File FileName="Assets\Hasegawa\script\Enemy\E1_Move.cs" Line="1" Column="1" />
+      <File FileName="Assets\Hasegawa\script\Enemy\E4_Puddle.cs" Line="1" Column="1" />
       <File FileName="Assets\Hasegawa\script\Enemy\E5_Rock.cs" Line="1" Column="1" />
-      <File FileName="Assets\Hasegawa\script\Enemy\myConst.cs" Line="13" Column="25" />
+      <File FileName="Assets\Hasegawa\script\Enemy\myConst.cs" Line="1" Column="1" />
+      <File FileName="Assets\Hasegawa\script\ObjectList.cs" Line="69" Column="2" />
+      <File FileName="Assets\Hasegawa\script\myObject.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

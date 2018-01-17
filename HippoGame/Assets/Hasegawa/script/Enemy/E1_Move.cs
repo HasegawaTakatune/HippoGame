@@ -60,6 +60,9 @@ public class E1_Move : MonoBehaviour {
 	/// 待機時の処理
 	/// 初期位置まで戻り、次にとる行動の選択をする
 	void Idle(){
+
+		// 初期位置まで後退し、ターゲットの再設定をする
+		myTransform.position -= myTransform.forward * movespd;
 		if (transform.position.z <= initZ)
 			InitStrike ();
 	}
@@ -120,14 +123,23 @@ public class E1_Move : MonoBehaviour {
 
 	/// ターゲット設定をする
 	void MasterTarget(){
+
+		// このキャラクターのレベルによって追尾ターゲットの再設定をする
 		switch (nowlevel) {
-		case Game.LEVEL1:
+		case Difficulty.LEVEL1:
+			// プレイヤーだけを狙う
+			SetPlayerTag ();
 			break;
 
-		case Game.LEVEL2:
+		case Difficulty.LEVEL2:
+			// 水たまりで加速しながらプレイヤーを狙う
+			SetPuddleTag();
 			break;
 
-		case Game.LEVEL3:
+		case Difficulty.LEVEL3:
+			// 岩を避けながら水加速でプレイヤーを狙う
+			SetPuddleTag ();
+			SetRockFlg ();
 			break;
 		}
 	}
