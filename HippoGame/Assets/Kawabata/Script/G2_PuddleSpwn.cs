@@ -22,7 +22,7 @@ public class G2_PuddleSpwn : MonoBehaviour {
 	private  IEnumerator Spwn(){
 		while (true) {
 			for (createcnt = 0; createcnt < spwnnum; createcnt++) {
-				Vector3 position = new Vector3 (Random.Range (random_x1, random_x2), 1, 3.5f);
+				Vector3 position = new Vector3 (Random.Range (random_x1, random_x2), -0.8876438f, 3.5f);
 				Instantiate (puddleobj, position, Quaternion.identity);
 			}
 			yield return new WaitForSeconds (spwnspd);

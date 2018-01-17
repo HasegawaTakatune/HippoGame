@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 104
+  controlID: 23
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 442}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 80
+  controlID: 48
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 128
+  controlID: 9
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,7 +310,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 355
     y: 592
-    width: 353
+    width: 443
     height: 320
 --- !u!114 &14
 MonoBehaviour:
@@ -368,21 +368,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 1afcffff00000000
+    m_ExpandedIDs: 4ae5ffff00000000562b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: wall01
+      m_OriginalName: wall01
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 11072
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -462,19 +462,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Skybox/Materials
+    - Assets/Kawabata/Script
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Skybox/Materials
+  - Assets/Kawabata/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\nwuser.DA\\Downloads\\413\\\uFF13A\\\u30B2\u30FC\u30E0\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u2162\\k08_\u30B2\u30FC\u30E0\u30B8\u30E3\u30E003\\3Algo3\\HippoGame\\HippoGame"
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 177}
-    m_SelectedIDs: 46260000
-    m_LastClickedID: 9798
-    m_ExpandedIDs: 00000000322600004a260000682600006c26000076260000822600008826000094260000aa260000ba260000c026000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: a62a0000
+    m_LastClickedID: 10918
+    m_ExpandedIDs: 00000000302a00006a2a0000862a0000902a0000a02a0000ae2a0000b42a0000c42a0000da2a0000dc2a0000f02a0000f62a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,7 +502,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000322600004a260000682600006c26000076260000822600008826000094260000aa260000ba260000c0260000
+    m_ExpandedIDs: 00000000302a00006a2a0000862a0000902a0000a02a0000ae2a0000b42a0000c42a0000da2a0000f02a0000f62a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -660,14 +660,14 @@ MonoBehaviour:
     width: 631
     height: 384
   m_SceneLighting: 1
-  lastFramingTime: 4344.362867485104
+  lastFramingTime: 4659.991279997077
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1205.9236, y: 3588.3362, z: 3434.195}
+    m_Target: {x: -0.050844144, y: -0.58770895, z: -0.46199894}
     speed: 2
-    m_Value: {x: -1205.9236, y: 3588.3362, z: 3434.195}
+    m_Value: {x: -0.050844144, y: -0.58770895, z: -0.46199894}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -690,17 +690,17 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.021215463, y: 0.18783298, z: 0.0040581566, w: -0.9819634}
+    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: {x: 0.021215463, y: 0.187833, z: 0.0040581566, w: -0.9819634}
+    m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 3434.9783
+    m_Target: 10.056878
     speed: 2
-    m_Value: 3434.9783
+    m_Value: 10.056878
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
