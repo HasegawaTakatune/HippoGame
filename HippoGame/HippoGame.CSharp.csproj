@@ -85,10 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Hasegawa\script\GameControl\G1_GameManager.cs" />
-    <Compile Include="Assets\Hasegawa\script\Player\P1_Move.cs" />
-    <Compile Include="Assets\Hasegawa\script\Player\P2_Jump.cs" />
-    <Compile Include="Assets\Hasegawa\script\Player\P3_Puddle.cs" />
     <Compile Include="Assets\Hasegawa\script\TitleButtonControl.cs" />
+    <Compile Include="Assets\Umenai\BasicBandit\DemoSceneBasicBandit\Scripts\ButtonFunction.cs" />
+    <Compile Include="Assets\Umenai\BasicBandit\DemoSceneBasicBandit\Scripts\MovementCamera.cs" />
+    <Compile Include="Assets\Umenai\Player\P1_Move.cs" />
+    <Compile Include="Assets\Umenai\Player\P2_Jump.cs" />
+    <Compile Include="Assets\Umenai\Player\P3_Puddle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
