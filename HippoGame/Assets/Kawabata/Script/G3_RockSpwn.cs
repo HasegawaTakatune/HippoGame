@@ -13,7 +13,7 @@ public class G3_RockSpwn : MonoBehaviour {
 	GameObject rockobj = null; //岩のオブジェクト
 	[SerializeField]
 	float random_min,random_max =0; //ランダムの範囲 x1:最低値 x2:最大値
-	private int createcnt; //for文に使う生成カウント
+	private int createcnt=0; //for文に使う生成カウント
 
 	// Use this for initialization
 	private void Start () {
@@ -22,6 +22,7 @@ public class G3_RockSpwn : MonoBehaviour {
 	private  IEnumerator Spwn(){
 		while (true) {
 			for (createcnt = 0; createcnt < spwnnum; createcnt++) {
+				                 //new Vector3(x(ランダム),y(固定値),z(固定値))　ランダムの範囲はInspectorで変更可
 				Vector3 position = new Vector3 (Random.Range (random_min, random_max), 1, 3.5f);
 				Instantiate (rockobj, position, Quaternion.identity);
 			}

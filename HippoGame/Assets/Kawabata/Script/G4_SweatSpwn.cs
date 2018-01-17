@@ -5,16 +5,18 @@ using UnityEngine;
 public class G4_SweatSpwn : MonoBehaviour {
 
 	[SerializeField]
-	float spwnspd =0;   //生成速度
+	float spwnspd = 0;   //生成速度
 	[SerializeField]
-	byte spwnnum =0;    //生成個数
+	byte spwnnum = 0;    //生成個数
 	[SerializeField]
 	GameObject sweatobj = null; //体液のオブジェクト
 	[SerializeField]
-	Transform shootPoint    = null; //発射地点(カバ)
+	Transform shootPoint = null; //発射地点(カバ)
 	[SerializeField]
-	Transform target        = null;//狙う場所(プレイヤー)
-	private int createcnt; //for文に使う生成カウント
+	Transform target = null;//狙う場所(プレイヤー)
+	[SerializeField]
+	float axis = 0;   //角度
+	private int createcnt=0; //for文に使う生成カウント
 
 	// Use this for initialization
 	void Start () {
@@ -31,20 +33,18 @@ public class G4_SweatSpwn : MonoBehaviour {
 	}
 	private void Shoot( Vector3 i_targetPosition )
 	{
-		// とりあえず適当に60度でかっ飛ばすとするよ！
-		ShootFixedAngle( i_targetPosition, 60.0f );　//カバからプレイヤー向かって射出する角度
+		// axisで指定した角度で飛ばす
+		ShootFixedAngle( i_targetPosition, axis);　//カバからプレイヤー向かって射出する角度
 	}
 
 	private void ShootFixedAngle( Vector3 i_targetPosition, float i_angle )
 	{
 		float speedVec  = ComputeVectorFromAngle( i_targetPosition, i_angle );
-		if( speedVec <= 0.0f )
-		{
+		if( speedVec <= 0.0f ){
 			// その位置に着地させることは不可能のようだ！
 			Debug.LogWarning( "!!" );
 			return;
 		}
-
 		Vector3     vec = ConvertVectorToVector3( speedVec, i_angle, i_targetPosition );
 		InstantiateShootObject( vec );
 	}
@@ -114,7 +114,6 @@ public class G4_SweatSpwn : MonoBehaviour {
 
 		// 速さベクトルのままAddForce()を渡してはいけないぞ。力(速さ×重さ)に変換するんだ
 		Vector3 force   = i_shootVector * rigidbody.mass;
-
 		rigidbody.AddForce( force, ForceMode.Impulse );
 	}
 }
