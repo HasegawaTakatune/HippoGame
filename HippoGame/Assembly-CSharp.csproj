@@ -62,6 +62,7 @@
      <Compile Include="Assets\Hasegawa\script\Enemy\myConst.cs" />
      <Compile Include="Assets\Kawabata\Script\G2_PuddleSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G3_RockSpwn.cs" />
+     <Compile Include="Assets\Kawabata\Script\G4_SweatSpwn.cs" />
      <Compile Include="Assets\Umenai\BasicBandit\DemoSceneBasicBandit\Scripts\ButtonFunction.cs" />
      <Compile Include="Assets\Umenai\BasicBandit\DemoSceneBasicBandit\Scripts\MovementCamera.cs" />
      <Compile Include="Assets\Umenai\Player\P1_Move.cs" />
