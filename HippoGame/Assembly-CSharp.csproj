@@ -57,7 +57,6 @@
      <Compile Include="Assets\Hasegawa\script\Enemy\E5_Rock.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\myConst.cs" />
      <Compile Include="Assets\Hasegawa\script\GameControl\G1_GameManager.cs" />
-     <Compile Include="Assets\Hasegawa\script\myObject.cs" />
      <Compile Include="Assets\Hasegawa\script\ObjectList.cs" />
      <Compile Include="Assets\Hasegawa\script\Player\P1_Move.cs" />
      <Compile Include="Assets\Hasegawa\script\Player\P2_Jump.cs" />
