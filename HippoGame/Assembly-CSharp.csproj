@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Aikei\Scripts\G1_GameManager.cs" />
      <Compile Include="Assets\Aikei\Scripts\G5_EnemyMeasure.cs" />
+     <Compile Include="Assets\Aikei\Scripts\G6_OutSideTerritory.cs" />
      <Compile Include="Assets\Aikei\Scripts\G7_Slide.cs" />
      <Compile Include="Assets\Aikei\Scripts\RayTest.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\E1_Move.cs" />
@@ -68,6 +69,7 @@
      <Compile Include="Assets\Umenai\Player\P1_Move.cs" />
      <Compile Include="Assets\Umenai\Player\P2_Jump.cs" />
      <Compile Include="Assets\Umenai\Player\P3_Puddle.cs" />
+     <None Include="Assets\Kawabata\asset store\Water\Water Flow FREE\Shaders\Water Flow FREE Simple.shader" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
