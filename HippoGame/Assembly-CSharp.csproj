@@ -54,6 +54,8 @@
      <Compile Include="Assets\Kawabata\Script\G2_PuddleSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G3_RockSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G4_SweatSpwn.cs" />
+     <Compile Include="Assets\Kawabata\Script\G8_Sweat.cs" />
+     <Compile Include="Assets\Kawabata\Script\G9_SpreadSweat.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
