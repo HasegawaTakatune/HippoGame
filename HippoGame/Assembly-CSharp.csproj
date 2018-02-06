@@ -61,6 +61,8 @@
      <Compile Include="Assets\Hasegawa\script\Enemy\E4_Puddle.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\E5_Rock.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\myConst.cs" />
+     <Compile Include="Assets\Hasegawa\script\myObject.cs" />
+     <Compile Include="Assets\Hasegawa\script\ObjectList.cs" />
      <Compile Include="Assets\Kawabata\Script\G2_PuddleSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G3_RockSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G4_SweatSpwn.cs" />

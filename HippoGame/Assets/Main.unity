@@ -1104,37 +1104,22 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b2640d49f0ac8594cbd559594e29bf12, type: 3}
   m_PrefabInternal: {fileID: 1962260801}
---- !u!95 &1553799196
-Animator:
-  serializedVersion: 3
+--- !u!114 &1553799196
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1553799192}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 8940bd312545b074ab31ae4ad5beea9e, type: 3}
-  m_Controller: {fileID: 9100000, guid: 208bee76c8e65214b9a80e552c8503c9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &1553799197
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1553799192}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 8940bd312545b074ab31ae4ad5beea9e, type: 3}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc14e7cee615bb346aa52fdd3d473837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movespd: 0.05
+  nowlevel: 1
+  nowState: 1
+  nowTarget: {fileID: 2094867444}
+  rockFlg: 0
 --- !u!1 &1565585260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,6 +1934,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2094867444 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1026751698214880, guid: 9d117aec3ed47f243bf20c2d5e106600,
+    type: 2}
+  m_PrefabInternal: {fileID: 1891758907}
 --- !u!1001 &2137711638
 Prefab:
   m_ObjectHideFlags: 0

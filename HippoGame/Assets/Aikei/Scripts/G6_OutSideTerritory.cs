@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class G6_OutSideTerritory : MonoBehaviour {
-
+	/*
 	[SerializeField]
 	Text OSText;
 
@@ -39,5 +39,5 @@ public class G6_OutSideTerritory : MonoBehaviour {
 	float Distance(){
 	}
 	void ShowDistance(){
-	}
+	}*/
 }
