@@ -4,11 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Button
-  - Enemy
-  - GameManager
   - Puddle
   - Rock
+  - GameManager
+  - Enemy
+  - Button
+  - Floor
+  - Sweat
+  - flag
   layers:
   - Default
   - TransparentFX
@@ -18,8 +21,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Sweat
+  - Player
   - 
   - 
   - 

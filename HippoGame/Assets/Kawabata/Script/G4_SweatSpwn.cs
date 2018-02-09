@@ -41,7 +41,6 @@ public class G4_SweatSpwn : MonoBehaviour {
 	{
 		float speedVec  = ComputeVectorFromAngle( i_targetPosition, i_angle );
 		if( speedVec <= 0.0f ){
-			// その位置に着地させることは不可能のようだ！
 			Debug.LogWarning( "!!" );
 			return;
 		}
@@ -61,7 +60,7 @@ public class G4_SweatSpwn : MonoBehaviour {
 		float y0    = shootPoint.transform.position.y;
 		float y     = i_targetPosition.y;
 
-		// Mathf.Cos()、Mathf.Tan()に渡す値の単位はラジアンだ。角度のまま渡してはいけないぞ！
+		// Mathf.Cos() Mathf.Tan()に渡す値の単位はラジアン
 		float rad   = i_angle * Mathf.Deg2Rad;
 
 		float cos   = Mathf.Cos( rad );
@@ -69,9 +68,8 @@ public class G4_SweatSpwn : MonoBehaviour {
 
 		float v0Square  = g * x * x / ( 2 * cos * cos * ( y - y0 - x * tan ) );
 
-		// 負数を平方根計算すると虚数になってしまう。
-		// 虚数はfloatでは表現できない。
-		// こういう場合はこれ以上の計算は打ち切ろう。
+
+		// -の値場合はこれ以上の計算は打ち切る
 		if( v0Square <= 0.0f )
 		{
 			return 0.0f;

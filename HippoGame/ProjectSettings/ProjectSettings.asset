@@ -590,9 +590,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 717125f6-f26e-4763-a005-4dabc7d0b1af
+  cloudProjectId: 49849673-7b82-480b-ab8c-bee423b53f08
   projectName: HippoGame
-  organizationId: reiry
+  organizationId: furigo
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

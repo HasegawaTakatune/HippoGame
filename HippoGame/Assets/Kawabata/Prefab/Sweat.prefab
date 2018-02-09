@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 33585303544917026}
   - component: {fileID: 135883576788955004}
   - component: {fileID: 23406992709079334}
-  - component: {fileID: 114231544115805974}
-  m_Layer: 0
+  - component: {fileID: 114781139269004726}
+  - component: {fileID: 114907749159447290}
+  m_Layer: 8
   m_Name: Sweat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6969aa9e252850a43aecb05cccd5266a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,7 +83,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1265664063401932}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114231544115805974
+--- !u!114 &114781139269004726
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -90,12 +91,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1265664063401932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea13e4fef94a964099b5915fda67513, type: 3}
+  m_Script: {fileID: 11500000, guid: 454ee690402e8f44db2471d118f696eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loopflg: 0
-  loopZobject: {fileID: 0}
-  loopobjcts: 0
+  SweatObject: {fileID: 1201901861672308, guid: 3c38aa009f43f54439b6df8daa14e256,
+    type: 2}
+  sweat_pos_y: {fileID: 4100073396964504, guid: 3c38aa009f43f54439b6df8daa14e256,
+    type: 2}
+--- !u!114 &114907749159447290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265664063401932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa8d437626b17c41a29dc8da810648f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135883576788955004
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -47,7 +47,7 @@ public class E5_Rock : MonoBehaviour {
 				audioSource.PlayOneShot (BreakSound);
 
 			Rock ();
-			Shake ();
+//			Shake ();
 			Destroy (collision.gameObject);
 		}
 	}

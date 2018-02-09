@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 244374779}
   - component: {fileID: 244374781}
   - component: {fileID: 244374782}
+  - component: {fileID: 244374783}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -149,7 +150,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244374778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.77, z: -6.6695147}
+  m_LocalPosition: {x: 0, y: 1.44, z: -6.6695147}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -188,6 +189,19 @@ MonoBehaviour:
   shootPoint: {fileID: 244374780}
   target: {fileID: 496731534}
   axis: 40
+--- !u!114 &244374783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244374778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454ee690402e8f44db2471d118f696eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SweatObject: {fileID: 1724668105887736, guid: 783e937abfd1bb649991be816bcd3f87,
+    type: 2}
 --- !u!1 &282598265
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +280,7 @@ GameObject:
   - component: {fileID: 309774043}
   m_Layer: 0
   m_Name: Field
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,7 +342,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309774042}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 20}
   m_Children: []
@@ -411,7 +425,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496731530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9562044, y: 1.4387937, z: 5.15}
+  m_LocalPosition: {x: 1.19, y: 1.4387937, z: 5.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

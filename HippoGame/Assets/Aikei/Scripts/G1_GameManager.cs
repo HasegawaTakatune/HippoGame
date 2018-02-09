@@ -15,7 +15,7 @@ public class G1_GameManager : MonoBehaviour {
 	/// </summary>
 	void Awake(){
 		// シーンをまたいでもオブジェクトが削除されない処理
-		DontDestroyOnLoad (gameObject);
+//		DontDestroyOnLoad (gameObject);
 		// シーンロード時のコールバックを登録
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}

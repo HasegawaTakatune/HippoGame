@@ -57,6 +57,7 @@
      <Compile Include="Assets\Aikei\Scripts\G6_OutSideTerritory.cs" />
      <Compile Include="Assets\Aikei\Scripts\G7_Slide.cs" />
      <Compile Include="Assets\Aikei\Scripts\RayTest.cs" />
+     <Compile Include="Assets\Destroy.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\E1_Move.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\E3_Sweat.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\E4_Puddle.cs" />
@@ -67,6 +68,8 @@
      <Compile Include="Assets\Kawabata\Script\G2_PuddleSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G3_RockSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G4_SweatSpwn.cs" />
+     <Compile Include="Assets\Kawabata\Script\G8_Sweat.cs" />
+     <Compile Include="Assets\Kawabata\Script\G9_SpreadSweat.cs" />
      <Compile Include="Assets\Umenai\BasicBandit\DemoSceneBasicBandit\Scripts\ButtonFunction.cs" />
      <Compile Include="Assets\Umenai\BasicBandit\DemoSceneBasicBandit\Scripts\MovementCamera.cs" />
      <Compile Include="Assets\Umenai\Player\P1_Move.cs" />
