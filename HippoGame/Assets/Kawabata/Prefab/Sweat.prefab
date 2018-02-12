@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 135883576788955004}
   - component: {fileID: 23406992709079334}
   - component: {fileID: 114781139269004726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sweat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
