@@ -1,60 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class G7_Slide : MonoBehaviour {
+public class G7_Slide : MonoBehaviour
+{
+    const float slidespd = 0.1f;    //このオブジェクトのスライド量を保存する
+    Transform trans;	        //使うTransformを保存する変数宣言
 
+    Vector3 movement;           // 移動量の格納
 
-	float slidespd=0;	//このオブジェクトのスライド量を保存する
-	Transform trans;	//使うTransformを保存する変数宣言
-	G1_GameManager GM;	//使うゲームマネージャを保存する変数宣言
+    const float zpos = -6;      // 削除するｚ座標
 
-	[SerializeField]
-	bool loopflg=false;
-	[SerializeField]
-	Transform loopZobject;	//ループするオブジェクトのスケールを取得
+    [SerializeField]
+    bool isDestroy = false;
 
-	float initpos;		//このオブジェクトの初期座標
-	float loopshiftpos;	//ループされた座標
-	[SerializeField]
-	byte loopobjcts;	//ループするオブジェクト数
-	// Use this for initialization
-	void Start () {
-		//このオブジェクトのスライド速度をGameManagerから参照する
-		slidespd=GameObject.FindGameObjectWithTag("GameManager").GetComponent<G1_GameManager> ().GetSlideSpd;
+    void Start()
+    {
+        //このオブジェクトのTransformを格納する
+        trans = gameObject.transform;
 
-		//このオブジェクトのTransformを格納する
-		trans = this.gameObject.transform;
+        movement = new Vector3(0, 0, slidespd);
+    }
 
-		if (loopZobject != null) {
-			initpos = loopZobject.position.z;
-			if (initpos < 0)
-				initpos *= -1;
-			loopshiftpos = initpos * loopZobject.localScale.z / 10;
-		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		Slide();
-	}
-
-	/// <summary>
-	/// スライド移動をする関数
-	/// </summary>
-	void Slide(){
-		trans.position -= new Vector3 (0, 0, slidespd);
-		if (loopflg == true) Loop ();
-	}
-	/// <summary>
-	/// オブジェクトをループする関数
-	/// </summary>
-	void Loop(){
-		//現在の座標　よりも　初期座標ーループ後の座標が大きいならば
-		if (trans.position.z <= -initpos-loopshiftpos) {
-			Debug.Log (trans.name+":loop");
-			trans.position += new Vector3 (0, 0, loopshiftpos*loopobjcts);
-		}
-
-	}
+    void Update()
+    {
+        trans.position -= movement;
+        if (isDestroy && trans.position.z < zpos) Destroy(gameObject);
+    }
 }

@@ -1,17 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class G8_GameOver : MonoBehaviour {
-	G1_GameManager GM;
+public class G8_GameOver : MonoBehaviour
+{
+    [SerializeField]
+    GameObject GameOverUI;
 
-	// Use this for initialization
-	void Start () {
-		GM = GameObject.Find ("GameManager").GetComponent<G1_GameManager> ();
-	}
-	void OnCollisionEnter(Collision col){
-		if (col.transform.tag == "Enemy") {
-			GM.GameTitle ();
-		}
-	}
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.transform.tag == "Enemy") GameOverUI.SetActive(true);
+    }
 }

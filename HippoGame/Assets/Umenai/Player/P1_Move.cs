@@ -1,14 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
-public class P1_Move : MonoBehaviour {
-
-    // 速度
-    //[SerializeField]float movespd = .2f;
-    // Transform格納
-    //Transform trans;
+public class P1_Move : MonoBehaviour
+{
     private Animator animator;
     // ジャンプ速度
     [SerializeField]
@@ -24,54 +17,46 @@ public class P1_Move : MonoBehaviour {
     Transform trans;
     // 上昇・下降の関数を格納
     System.Action action;
+
     /// <summary>
     /// 初期化
     /// </summary>
-    void Start () {
+    void Awake()
+    {
+        ObjectList.SetPlayerList(gameObject);
+    }
+    void Start()
+    {
         trans = transform;
         ceiling = trans.position.y + jumpheight;
         action = () => Up();
         animator = GetComponent<Animator>();
-        
-	//	trans = transform;
-	}
+    }
+
     /// <summary>
     /// メインループ
     /// </summary>
     void Update()
     {
-        //Move ();
-         
-        transform.Rotate(0, 0, 0);
-        if (transform.position.x < -3.5 )
-        {
-            transform.position = new Vector3(-3.5f,this.transform.position.y,this.transform.position.z);
-        }
-        if (transform.position.x > 3.5)
-        {
-            transform.position = new Vector3(3.5f, this.transform.position.y, this.transform.position.z);
-        }
+        if (trans.position.x < -3.5)
+            trans.position = new Vector3(-3.5f, trans.position.y, trans.position.z);
+
+        if (trans.position.x > 3.5)
+            trans.position = new Vector3(3.5f, trans.position.y, trans.position.z);
+
         float dx = Input.GetAxis("Horizontal");
-            transform.Translate(dx / 2, 0, 0);
+        trans.Translate(dx / 2, 0, 0);
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
-                isjump = true;
+            isjump = true;
             // 上昇・下降の処理をする
             if (isjump)
                 action();
             animator.SetTrigger("PlayerMove");
         }
-        
     }
-   
-        void OnCollisionEnter(Collision other)
-    {
-            if (other.gameObject.tag == "enemy")
-            {
-//            SceneManager.LoadScene("Title");
-                Debug.Log("Hit");
-            }
-        }
+
     void Up()
     {
         // 上昇

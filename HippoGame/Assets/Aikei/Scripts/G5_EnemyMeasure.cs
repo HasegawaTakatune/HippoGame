@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class G5_EnemyMeasure : MonoBehaviour {
@@ -21,11 +19,11 @@ public class G5_EnemyMeasure : MonoBehaviour {
 	void Start(){
 		//ゲームオブジェクトの検索,格納
 		Player = GameObject.FindGameObjectWithTag ("Player");
-		Enemy = GameObject.FindGameObjectWithTag ("Enemy");
+        Enemy = GameObject.FindGameObjectWithTag ("Enemy");
 
-		//ゲームオブジェクトの座標コンポーネントの取得
-		PlayerTrans = Player.GetComponent<Transform> ();
-		EnemyTrans = Enemy.GetComponent<Transform> ();
+        //ゲームオブジェクトの座標コンポーネントの取得
+        PlayerTrans = Player.transform;
+        EnemyTrans = Enemy.transform;
 	}
 
 	void Update(){

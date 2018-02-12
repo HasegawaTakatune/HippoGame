@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class E1_Move : MonoBehaviour
@@ -40,10 +39,8 @@ public class E1_Move : MonoBehaviour
     void Start()
     {
         myTransform = transform;
-
         initZ = myTransform.position.z;
-
-		ObjectList.SetPlayerList (nowTarget);
+        nowTarget = ObjectList.GetPlayerObject();
     }
 
     /// メインループ
@@ -73,7 +70,6 @@ public class E1_Move : MonoBehaviour
     /// 初期位置まで戻り、次にとる行動の選択をする
     void Idle()
     {
-
         // 初期位置まで後退し、ターゲットの再設定をする
         myTransform.position -= myTransform.forward * movespd;
         if (transform.position.z <= initZ)
@@ -94,10 +90,8 @@ public class E1_Move : MonoBehaviour
     /// 突進（攻撃）をする
     void Strike()
     {
-        /// ターゲット方向を求める
-        float angle = GetDegree(transform.position, nowTarget.transform.position);
         /// 移動ベクトル
-        Vector3 movement = myTransform.forward * movespd;//new Vector3(Mathf.Cos(angle * 3.14f / 180), 0, 1) * movespd;
+        Vector3 movement = myTransform.forward * movespd;
 
         // 岩を避けるか突っ切るかを判定
         if (rockFlg)
@@ -145,7 +139,6 @@ public class E1_Move : MonoBehaviour
     /// ターゲット設定をする
     void MasterTarget()
     {
-
         // このキャラクターのレベルによって追尾ターゲットの再設定をする
         switch (nowlevel)
         {

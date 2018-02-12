@@ -1,54 +1,63 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class E5_Rock : MonoBehaviour {
+public class E5_Rock : MonoBehaviour
+{
 
-	/// オーディオの再生先を格納
-	AudioSource audioSource;
-	/// 岩の破壊音の登録
-	public AudioClip BreakSound;
+    /// オーディオの再生先を格納
+    AudioSource audioSource;
+    /// 岩の破壊音の登録
+    [SerializeField]
+    AudioClip[] BreakSound;
+    int clipLength;
 
-	/// E1_Moveを格納
-	E1_Move move;
-	/// カメラを格納
-	GameObject _camera;
-	/// 画面を揺らすためのx,y座標(Shake_x,Shake_y)と揺らす時間(Shake_Time)
-	[SerializeField]float Shake_x = .3f,Shake_y = .3f,Shake_Time = .5f;
+    /// E1_Moveを格納
+    E1_Move move;
+    /// カメラを格納
+    GameObject _camera;
+    /// 画面を揺らすためのx,y座標(Shake_x,Shake_y)と揺らす時間(Shake_Time)
+    [SerializeField]
+    float Shake_x = .3f, Shake_y = .3f, Shake_Time = .5f;
 
-	/// 初期化
-	void Start () {
-		// E1_Moveを取得
-		move = GetComponent<E1_Move> ();
-		// カメラを取得
-		_camera = GameObject.FindGameObjectWithTag ("MainCamera");
+    /// 初期化
+    void Start()
+    {
+        // E1_Moveを取得
+        move = GetComponent<E1_Move>();
+        // カメラを取得
+        _camera = GameObject.FindGameObjectWithTag("MainCamera");
 
-		audioSource = GetComponent<AudioSource> ();
-	}
+        audioSource = GetComponent<AudioSource>();
 
-	/// アイドル状態にする
-	void Rock(){
-		move.Status = STATUS.IDLE;
-	}
+        clipLength = BreakSound.Length;
+    }
 
-	/// 画面を揺らす
-	void Shake(){
-		iTween.ShakePosition (_camera, iTween.Hash ("x", Shake_x, "y", Shake_y, "time", Shake_Time));
-	}
+    /// アイドル状態にする
+    void Rock()
+    {
+        move.Status = STATUS.IDLE;
+    }
 
-	/// 岩に衝突したかを判定する
-	void OnCollisionEnter(Collision collision){
-		// 岩に衝突した場合、アイドル状態にして画面を揺らす
-		// 岩は破壊される
-		if (collision.transform.tag == "Rock") {
+    /// 画面を揺らす
+    void Shake()
+    {
+        iTween.ShakePosition(_camera, iTween.Hash("x", Shake_x, "y", Shake_y, "time", Shake_Time));
+    }
 
-			// 岩の破壊音を再生
-			if (BreakSound != null) 
-				audioSource.PlayOneShot (BreakSound);
+    /// 岩に衝突したかを判定する
+    void OnCollisionEnter(Collision collision)
+    {
+        // 岩に衝突した場合、アイドル状態にして画面を揺らす
+        // 岩は破壊される
+        if (collision.transform.tag == "Rock")
+        {
 
-			Rock ();
-//			Shake ();
-			Destroy (collision.gameObject);
-		}
-	}
+            // 岩の破壊音を再生
+            if (BreakSound != null)
+                audioSource.PlayOneShot(BreakSound[Random.Range(0, clipLength)]);
+
+            Rock();
+            Shake ();
+            Destroy(collision.gameObject);
+        }
+    }
 }

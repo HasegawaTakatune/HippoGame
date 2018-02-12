@@ -12,6 +12,7 @@ TagManager:
   - Floor
   - Sweat
   - flag
+  - MainManager
   layers:
   - Default
   - TransparentFX

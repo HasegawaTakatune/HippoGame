@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 /// オブジェクトをタグで分類して、リストとして保存する
 /// Player(プレイヤー),Puddle(水たまり),Rock(岩)別に保存する
