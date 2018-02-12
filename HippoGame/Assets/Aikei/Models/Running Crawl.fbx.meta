@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: 8940bd312545b074ab31ae4ad5beea9e
+timeCreated: 1516163298
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Eye.L
+    100004: Eye.L_end
+    100006: Eye.R
+    100008: Eye.R_end
+    100010: Foot.L
+    100012: Foot.R
+    100014: Hand.L
+    100016: Hand.R
+    100018: Head
+    100020: Hips
+    100022: IndexDistal.L
+    100024: IndexDistal.L_end
+    100026: IndexDistal.R
+    100028: IndexDistal.R_end
+    100030: IndexMiddle.L
+    100032: IndexMiddle.R
+    100034: IndexProximal.L
+    100036: IndexProximal.R
+    100038: Jaw
+    100040: Jaw_end
+    100042: LittleDistal.L
+    100044: LittleDistal.L_end
+    100046: LittleDistal.R
+    100048: LittleDistal.R_end
+    100050: LittleMiddle.L
+    100052: LittleMiddle.R
+    100054: LittleProximal.L
+    100056: LittleProximal.R
+    100058: LowerArm.L
+    100060: LowerArm.R
+    100062: LowerLeg.L
+    100064: LowerLeg.R
+    100066: MiddleDistal.L
+    100068: MiddleDistal.L_end
+    100070: MiddleDistal.R
+    100072: MiddleDistal.R_end
+    100074: MiddleMiddle.L
+    100076: MiddleMiddle.R
+    100078: MiddleProximal.L
+    100080: MiddleProximal.R
+    100082: Neck
+    100084: RingDistal.L
+    100086: RingDistal.L_end
+    100088: RingDistal.R
+    100090: RingDistal.R_end
+    100092: RingMiddle.L
+    100094: RingMiddle.R
+    100096: RingProximal.L
+    100098: RingProximal.R
+    100100: //RootNode
+    100102: Shoulder.L
+    100104: Shoulder.R
+    100106: Spine
+    100108: ThumbDistal.L
+    100110: ThumbDistal.L_end
+    100112: ThumbDistal.R
+    100114: ThumbDistal.R_end
+    100116: ThumbMiddle.L
+    100118: ThumbMiddle.R
+    100120: ThumbProximal.L
+    100122: ThumbProximal.R
+    100124: Toe.L
+    100126: Toe.L_end
+    100128: Toe.R
+    100130: Toe.R_end
+    100132: UpperArm.L
+    100134: UpperArm.R
+    100136: UpperLeg.L
+    100138: UpperLeg.R
+    400000: Chest
+    400002: Eye.L
+    400004: Eye.L_end
+    400006: Eye.R
+    400008: Eye.R_end
+    400010: Foot.L
+    400012: Foot.R
+    400014: Hand.L
+    400016: Hand.R
+    400018: Head
+    400020: Hips
+    400022: IndexDistal.L
+    400024: IndexDistal.L_end
+    400026: IndexDistal.R
+    400028: IndexDistal.R_end
+    400030: IndexMiddle.L
+    400032: IndexMiddle.R
+    400034: IndexProximal.L
+    400036: IndexProximal.R
+    400038: Jaw
+    400040: Jaw_end
+    400042: LittleDistal.L
+    400044: LittleDistal.L_end
+    400046: LittleDistal.R
+    400048: LittleDistal.R_end
+    400050: LittleMiddle.L
+    400052: LittleMiddle.R
+    400054: LittleProximal.L
+    400056: LittleProximal.R
+    400058: LowerArm.L
+    400060: LowerArm.R
+    400062: LowerLeg.L
+    400064: LowerLeg.R
+    400066: MiddleDistal.L
+    400068: MiddleDistal.L_end
+    400070: MiddleDistal.R
+    400072: MiddleDistal.R_end
+    400074: MiddleMiddle.L
+    400076: MiddleMiddle.R
+    400078: MiddleProximal.L
+    400080: MiddleProximal.R
+    400082: Neck
+    400084: RingDistal.L
+    400086: RingDistal.L_end
+    400088: RingDistal.R
+    400090: RingDistal.R_end
+    400092: RingMiddle.L
+    400094: RingMiddle.R
+    400096: RingProximal.L
+    400098: RingProximal.R
+    400100: //RootNode
+    400102: Shoulder.L
+    400104: Shoulder.R
+    400106: Spine
+    400108: ThumbDistal.L
+    400110: ThumbDistal.L_end
+    400112: ThumbDistal.R
+    400114: ThumbDistal.R_end
+    400116: ThumbMiddle.L
+    400118: ThumbMiddle.R
+    400120: ThumbProximal.L
+    400122: ThumbProximal.R
+    400124: Toe.L
+    400126: Toe.L_end
+    400128: Toe.R
+    400130: Toe.R_end
+    400132: UpperArm.L
+    400134: UpperArm.R
+    400136: UpperLeg.L
+    400138: UpperLeg.R
+    7400000: HippoRun
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: HippoRun
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

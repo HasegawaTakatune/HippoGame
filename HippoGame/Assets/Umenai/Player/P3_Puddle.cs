@@ -8,12 +8,15 @@ public class P3_Puddle : MonoBehaviour {
 	[SerializeField] float slidespd = .1f;
 	// Transform格納
 	Transform trans;
-
+	AudioSource audioSource;
+	/// 入水音の登録
+	public AudioClip LandingSound;
 	/// <summary>
 	/// 初期化
 	/// </summary>
 	void Start () {
 		trans = transform;
+		audioSource = GetComponent<AudioSource> ();
 	}
 
 	/// <summary>
@@ -28,8 +31,17 @@ public class P3_Puddle : MonoBehaviour {
 	/// </summary>
 	void OnTriggerStay(Collider collider){
 		string tag = collider.gameObject.tag;
-		if (tag == "Puddle" || tag == "Sweat")
+		if (tag == "Puddle" || tag == "Sweat") {
 			Puddle ();
+		}
+	}
+	void OnTriggerEnter(Collider collider){
+		string tag = collider.gameObject.tag;
+		if (tag == "Puddle" || tag == "Sweat") {
+			// 着水音を再生
+			if (LandingSound != null)
+				audioSource.PlayOneShot (LandingSound);
+		}
 	}
 
 }

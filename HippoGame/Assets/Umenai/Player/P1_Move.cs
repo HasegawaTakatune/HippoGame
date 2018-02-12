@@ -64,11 +64,11 @@ public class P1_Move : MonoBehaviour {
         
     }
    
-        void OnCollisionStay(Collision other)
+        void OnCollisionEnter(Collision other)
     {
             if (other.gameObject.tag == "enemy")
             {
-            SceneManager.LoadScene("Title");
+//            SceneManager.LoadScene("Title");
                 Debug.Log("Hit");
             }
         }
