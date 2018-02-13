@@ -8,16 +8,23 @@ public class G6_OutSideTerritory : MonoBehaviour
 
     [SerializeField]
     Transform goal;//スタートからゴールまでの距離
-
+    
     [SerializeField]
     Transform PlayerTrans;
 
     [SerializeField]
     GameObject GoalUI;
 
+    float zz;
+
+    void Start()
+    {
+        zz = PlayerTrans.position.z;
+    }
+
     void Update()
     {
-        float range = Measure(PlayerTrans.position.z, goal.position.z);
+        float range = Measure(zz, goal.position.z);
         OSText.text = "GOAL:" + range.ToString("f1") + "m";
         if (range <= 1 && G1_GameManager.isPlay())
         {

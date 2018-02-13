@@ -198,7 +198,6 @@ public class E1_Move : MonoBehaviour
     /// ターゲット方向に向く
     void RotCalcu()
     {
-        // ターゲットに向く
         myTransform.LookAt(nowTarget.transform);
     }
 
