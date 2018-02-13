@@ -19,7 +19,11 @@ public class G6_OutSideTerritory : MonoBehaviour
     {
         float range = Measure(PlayerTrans.position.z, goal.position.z);
         OSText.text = "GOAL:" + range.ToString("f1") + "m";
-        if (range <= 1) GoalUI.SetActive(true);
+        if (range <= 1 && G1_GameManager.isPlay())
+        {
+            G1_GameManager.GameStatus = G1_GameManager.GameClear;
+            GoalUI.SetActive(true);
+        }
     }
     /// <summary>
     /// 2つのゲームオブジェクトの距離を測る関数

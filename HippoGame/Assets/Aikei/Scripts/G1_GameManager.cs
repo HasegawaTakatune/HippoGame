@@ -4,6 +4,11 @@ using UnityEngine.UI;
 
 public class G1_GameManager : MonoBehaviour
 {
+
+    public const byte Title = 0, Play = 1, GameClear = 2, GameOver = 3;
+    public static byte GameStatus = Title;
+    public static bool isPlay() { return GameStatus == Play; }
+
     /// <summary>
     /// 初期化
     /// </summary>
@@ -37,6 +42,7 @@ public class G1_GameManager : MonoBehaviour
     /// </summary>
     public void GameStart()
     {
+        GameStatus = Play;
         SceneManager.LoadScene("Main");
     }
 
@@ -53,6 +59,7 @@ public class G1_GameManager : MonoBehaviour
     /// </summary>
     public void GameTitle()
     {
+        GameStatus = Title;
         SceneManager.LoadScene("Title");
     }
 }

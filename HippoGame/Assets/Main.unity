@@ -4522,7 +4522,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1383457349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.35, y: 0, z: 800}
+  m_LocalPosition: {x: 2.35, y: 0, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1265659240}
@@ -4768,7 +4768,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb92bab77caa2640b6163963341c0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BreakSound: []
+  BreakSound:
+  - {fileID: 8300000, guid: b499c233a59cb00449d3f7d93ca994ad, type: 3}
+  - {fileID: 8300000, guid: 3e42f8c167a44504e8512980a5817745, type: 3}
   Shake_x: 0.3
   Shake_y: 0.3
   Shake_Time: 0.5

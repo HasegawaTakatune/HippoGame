@@ -2,8 +2,8 @@
 
 public class ReturnToTitle : MonoBehaviour {
 
-	void Start () {
-        Invoke("toTitle", 15);
+	void OnEnable () {
+        Invoke("toTitle", 5);
 	}
 
     void toTitle()

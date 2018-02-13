@@ -7,6 +7,10 @@ public class G8_GameOver : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.transform.tag == "Enemy") GameOverUI.SetActive(true);
+        if (col.transform.tag == "Enemy" && G1_GameManager.isPlay())
+        {
+            G1_GameManager.GameStatus = G1_GameManager.GameOver;
+            GameOverUI.SetActive(true);
+        }
     }
 }
