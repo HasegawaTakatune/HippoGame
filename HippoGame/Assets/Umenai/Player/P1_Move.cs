@@ -61,7 +61,6 @@ public class P1_Move : MonoBehaviour {
                 action();
             animator.SetTrigger("PlayerMove");
         }
-        
     }
    
         void OnCollisionEnter(Collision other)
