@@ -52,7 +52,7 @@ public class E5_Rock : MonoBehaviour
         {
 
             // 岩の破壊音を再生
-            if (BreakSound != null)
+            if (clipLength > 0)
                 audioSource.PlayOneShot(BreakSound[Random.Range(0, clipLength)]);
 
             Rock();
