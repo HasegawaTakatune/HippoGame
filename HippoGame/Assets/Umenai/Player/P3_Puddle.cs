@@ -41,6 +41,8 @@ public class P3_Puddle : MonoBehaviour
         if (tag == "Puddle" || tag == "Sweat")
         {
             Puddle();
+            if (!audioSource.isPlaying)
+                audioSource.PlayOneShot(LandingSound[Random.Range(0, clipLength)]);
         }
     }
     void OnTriggerEnter(Collider collider)

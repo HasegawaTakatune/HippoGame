@@ -19,6 +19,9 @@ public class P1_Move : MonoBehaviour
     Transform trans;
     // 上昇・下降の関数を格納
     System.Action action;
+    // すみっこ
+    [SerializeField]
+    float corner = 5;
 
     /// <summary>
     /// 初期化
@@ -39,11 +42,11 @@ public class P1_Move : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (trans.position.x < -3.5)
-            trans.position = new Vector3(-3.5f, trans.position.y, trans.position.z);
+        if (trans.position.x < -corner)
+            trans.position = new Vector3(-corner, trans.position.y, trans.position.z);
 
-        if (trans.position.x > 3.5)
-            trans.position = new Vector3(3.5f, trans.position.y, trans.position.z);
+        if (trans.position.x > corner)
+            trans.position = new Vector3(corner, trans.position.y, trans.position.z);
 
         float dx = Input.GetAxis("Horizontal");
         trans.Translate(dx / 2, 0, 0);
@@ -74,7 +77,7 @@ public class P1_Move : MonoBehaviour
         // 下降
         trans.position -= trans.up * jumpSpd;
         // 着地処理
-        if (trans.position.y < floor)
+        if (trans.position.y <= floor)
         {
             isJump = false;
             action = () => Up();
