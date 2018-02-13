@@ -5,14 +5,16 @@ public class P1_Move : MonoBehaviour
     private Animator animator;
     // ジャンプ速度
     [SerializeField]
-    float jumpspd = 1;
+    float jumpSpd = 1;
     // ジャンプ高さ
     [SerializeField]
-    float jumpheight = 1;
+    float jumpHeight = 1;
     // 天井
     float ceiling;
+    // 床
+    [SerializeField]float floor;
     // ジャンプ中判定
-    bool isjump = false;
+    bool isJump = false;
     // Transform格納
     Transform trans;
     // 上昇・下降の関数を格納
@@ -28,7 +30,6 @@ public class P1_Move : MonoBehaviour
     void Start()
     {
         trans = transform;
-        ceiling = trans.position.y + jumpheight;
         action = () => Up();
         animator = GetComponent<Animator>();
     }
@@ -47,20 +48,22 @@ public class P1_Move : MonoBehaviour
         float dx = Input.GetAxis("Horizontal");
         trans.Translate(dx / 2, 0, 0);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !isJump)
         {
-            isjump = true;
-            // 上昇・下降の処理をする
-            if (isjump)
-                action();
             animator.SetTrigger("PlayerMove");
+            isJump = true;
+            ceiling = trans.position.y + jumpHeight;
         }
+
+        // 上昇・下降の処理をする
+        if (isJump)
+            action();
     }
 
     void Up()
     {
         // 上昇
-        trans.position += trans.up * jumpspd;
+        trans.position += trans.up * jumpSpd;
         // 上昇限界処理
         if (trans.position.y >= ceiling)
             action = () => Down();
@@ -69,11 +72,11 @@ public class P1_Move : MonoBehaviour
     void Down()
     {
         // 下降
-        trans.position -= trans.up * jumpspd;
+        trans.position -= trans.up * jumpSpd;
         // 着地処理
-        if (trans.position.y <= ceiling - jumpheight)
+        if (trans.position.y < floor)
         {
-            isjump = false;
+            isJump = false;
             action = () => Up();
         }
     }

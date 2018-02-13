@@ -6229,6 +6229,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114670785632967358, guid: 9d117aec3ed47f243bf20c2d5e106600,
+        type: 2}
+      propertyPath: LandingSound.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4303786826427912, guid: 9d117aec3ed47f243bf20c2d5e106600, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6278,7 +6283,7 @@ Prefab:
         type: 2}
       propertyPath: LandingSound
       value: 
-      objectReference: {fileID: 8300000, guid: 3eb4e944a963f4c4a9eef63848353266, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1026751698214880, guid: 9d117aec3ed47f243bf20c2d5e106600, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -6286,7 +6291,7 @@ Prefab:
     - target: {fileID: 54507596424081752, guid: 9d117aec3ed47f243bf20c2d5e106600,
         type: 2}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65721646461311776, guid: 9d117aec3ed47f243bf20c2d5e106600,
         type: 2}
@@ -6302,6 +6307,31 @@ Prefab:
         type: 2}
       propertyPath: m_Center.z
       value: 0.003949821
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805430273096790, guid: 9d117aec3ed47f243bf20c2d5e106600,
+        type: 2}
+      propertyPath: jumpSpd
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805430273096790, guid: 9d117aec3ed47f243bf20c2d5e106600,
+        type: 2}
+      propertyPath: jumpHeight
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114670785632967358, guid: 9d117aec3ed47f243bf20c2d5e106600,
+        type: 2}
+      propertyPath: LandingSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d1553bf850492f641aaab7069bf237b9, type: 3}
+    - target: {fileID: 114670785632967358, guid: 9d117aec3ed47f243bf20c2d5e106600,
+        type: 2}
+      propertyPath: LandingSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6083b5388ce539d4f8ca66bb6f02cf70, type: 3}
+    - target: {fileID: 114805430273096790, guid: 9d117aec3ed47f243bf20c2d5e106600,
+        type: 2}
+      propertyPath: floor
+      value: -0.68
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d117aec3ed47f243bf20c2d5e106600, type: 2}
