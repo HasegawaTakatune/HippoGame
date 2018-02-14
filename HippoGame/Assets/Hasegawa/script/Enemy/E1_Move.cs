@@ -124,7 +124,15 @@ public class E1_Move : MonoBehaviour
             if (targetTag == "Player")  // ターゲットがプレイヤの場合、待機状態にする
                 nowState = STATUS.IDLE;
             else
-                InitStrike();           // それ以外の場合、次のターゲットを探す
+            {
+                SetPlayerTag();
+                //InitStrike();           // それ以外の場合、次のターゲットを探す
+                // ターゲットに向く
+                RotCalcu();
+                // ステータスを突進（攻撃）にする
+                nowState = STATUS.STR;
+                targetTag = "Player";
+            }
         }
     }
 
@@ -174,10 +182,18 @@ public class E1_Move : MonoBehaviour
         GameObject pud = ObjectList.GetPuddleObject(0);     // 水たまり
         // 距離を求める
         float pl_len = Vector3.Distance(myTransform.position, pl.transform.position);
-        float pud_len = Vector3.Distance(myTransform.position, pud.transform.position);
+        float pud_len = (pud != null) ? Vector3.Distance(myTransform.position, pud.transform.position) : 99;
         // 距離が近いほうをターゲットに選択する
-        if (pud_len < pl_len && pud != null) nowTarget = pud;
-        else nowTarget = pl;
+        if (pud_len < pl_len && pud != null)
+        {
+            nowTarget = pud;
+            targetTag = "Puddle";
+        }
+        else
+        {
+            nowTarget = pl;
+            targetTag = "Player";
+        }
     }
 
     /// 岩を回避するモード切替

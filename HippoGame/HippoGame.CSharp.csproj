@@ -219,13 +219,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Aikei\G8_GameOver.cs" />
+    <Compile Include="Assets\Aikei\Scripts\Destroy.cs" />
     <Compile Include="Assets\Aikei\Scripts\G1_GameManager.cs" />
     <Compile Include="Assets\Aikei\Scripts\G5_EnemyMeasure.cs" />
     <Compile Include="Assets\Aikei\Scripts\G6_OutSideTerritory.cs" />
     <Compile Include="Assets\Aikei\Scripts\G7_Slide.cs" />
+    <Compile Include="Assets\Aikei\Scripts\G8_GameOver.cs" />
     <Compile Include="Assets\Aikei\Scripts\RayTest.cs" />
-    <Compile Include="Assets\Destroy.cs" />
     <Compile Include="Assets\Hasegawa\script\Enemy\E1_Move.cs" />
     <Compile Include="Assets\Hasegawa\script\Enemy\E4_Puddle.cs" />
     <Compile Include="Assets\Hasegawa\script\Enemy\E5_Rock.cs" />
@@ -233,6 +233,7 @@
     <Compile Include="Assets\Hasegawa\script\GameOver.cs" />
     <Compile Include="Assets\Hasegawa\script\ObjectList.cs" />
     <Compile Include="Assets\Hasegawa\script\ObjectSpawner.cs" />
+    <Compile Include="Assets\Hasegawa\script\Puddle.cs" />
     <Compile Include="Assets\Hasegawa\script\ReturnToTitle.cs" />
     <Compile Include="Assets\Kawabata\Script\G2_PuddleSpwn.cs" />
     <Compile Include="Assets\Kawabata\Script\G3_RockSpwn.cs" />

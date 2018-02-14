@@ -7,7 +7,8 @@ public class G7_Slide : MonoBehaviour
 
     Vector3 movement;           // 移動量の格納
 
-    const float zpos = -6;      // 削除するｚ座標
+    [SerializeField]
+    float zpos = -6;      // 削除するｚ座標
 
     [SerializeField]
     bool isDestroy = false;

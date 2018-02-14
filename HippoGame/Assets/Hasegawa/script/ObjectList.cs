@@ -47,19 +47,23 @@ public class ObjectList : MonoBehaviour
     //:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/://
 
     /// リストの宣言
-	static List<GameObject> Puddle = null;//new List<Transform> ();
+	static List<GameObject> Puddle = new List<GameObject> ();
+    public static int PuddleLength = 0;
 
     /// リストに追加
     public static void AddPuddleList(GameObject obj)
     {
         if (obj.tag == "Puddle")
+        {
             Puddle.Add(obj);
+            PuddleLength = Puddle.Count;
+        }
     }
 
     /// リストからオブジェクトを取得
     public static GameObject GetPuddleObject(int ii)
     {
-        if (ii <= 0 && ii < 0 && Puddle.Count <= ii)
+        if (ii >= 0 && ii < Puddle.Count)
             return Puddle[ii];
 
         return null;
@@ -77,7 +81,9 @@ public class ObjectList : MonoBehaviour
     public static void RemoveAtPuddleList(int ii)
     {
         if (ii <= 0 && ii < 0 && Puddle.Count <= ii)
+        {
             Puddle.RemoveAt(ii);
+        }
     }
 
     /// リストを開放
@@ -93,7 +99,7 @@ public class ObjectList : MonoBehaviour
     //:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/:/://
 
     /// リストの宣言
-    static List<GameObject> Rock = null;//new List<Transform> ();
+    static List<GameObject> Rock = new List<GameObject> ();
 
     /// リストに追加
     public static void AddRockList(GameObject obj)
@@ -139,6 +145,14 @@ public class ObjectList : MonoBehaviour
         else if (tag == "Puddle") AddPuddleList(obj);
         else if (tag == "Rock") AddRockList(obj);
 
+    }
+
+
+    public static void ReleaseAllList()
+    {
+        Player = null;
+        Puddle.Clear();
+        Rock.Clear();
     }
 
 }
