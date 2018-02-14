@@ -59,12 +59,13 @@
      <Compile Include="Assets\Aikei\Scripts\RayTest.cs" />
      <Compile Include="Assets\Destroy.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\E1_Move.cs" />
-     <Compile Include="Assets\Hasegawa\script\Enemy\E3_Sweat.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\E4_Puddle.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\E5_Rock.cs" />
      <Compile Include="Assets\Hasegawa\script\Enemy\myConst.cs" />
+     <Compile Include="Assets\Hasegawa\script\GameOver.cs" />
      <Compile Include="Assets\Hasegawa\script\ObjectList.cs" />
-     <Compile Include="Assets\Hasegawa\script\PlayerTest.cs" />
+     <Compile Include="Assets\Hasegawa\script\ObjectSpawner.cs" />
+     <Compile Include="Assets\Hasegawa\script\ReturnToTitle.cs" />
      <Compile Include="Assets\Kawabata\Script\G2_PuddleSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G3_RockSpwn.cs" />
      <Compile Include="Assets\Kawabata\Script\G4_SweatSpwn.cs" />
@@ -75,8 +76,12 @@
      <Compile Include="Assets\Umenai\Player\P1_Move.cs" />
      <Compile Include="Assets\Umenai\Player\P2_Jump.cs" />
      <Compile Include="Assets\Umenai\Player\P3_Puddle.cs" />
+     <Compile Include="Assets\ZAssetStore\Plugins\Pixelplacement\iTween\iTween.cs" />
+     <Compile Include="Assets\ZAssetStore\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
+     <Compile Include="Assets\ZAssetStore\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
+     <Compile Include="Assets\ZAssetStore\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
      <None Include="Assets\Kawabata\asset store\Water\Water Flow FREE\Shaders\Water Flow FREE Simple.shader" />
-     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\ZAssetStore\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -98,10 +103,6 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{347163DF-D6CB-303C-49B0-8E34EA9B2499}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
