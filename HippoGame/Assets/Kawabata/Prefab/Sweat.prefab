@@ -23,7 +23,10 @@ GameObject:
   - component: {fileID: 135883576788955004}
   - component: {fileID: 23406992709079334}
   - component: {fileID: 114781139269004726}
+<<<<<<< HEAD
+=======
   - component: {fileID: 114907749159447290}
+>>>>>>> origin/UmenaiPlayer
   m_Layer: 8
   m_Name: Sweat
   m_TagString: Untagged
@@ -53,7 +56,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -69,7 +71,6 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -98,13 +99,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SweatObject: {fileID: 1201901861672308, guid: 3c38aa009f43f54439b6df8daa14e256,
     type: 2}
+  sweat_pos_y: {fileID: 4100073396964504, guid: 3c38aa009f43f54439b6df8daa14e256,
+    type: 2}
 --- !u!114 &114907749159447290
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1265664063401932}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aa8d437626b17c41a29dc8da810648f, type: 3}
   m_Name: 
