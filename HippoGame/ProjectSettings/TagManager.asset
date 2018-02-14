@@ -4,8 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Puddle
+  - Rock
+  - GameManager
+  - Enemy
   - Button
   - Floor
+  - Sweat
+  - flag
   layers:
   - Default
   - TransparentFX
@@ -16,7 +22,11 @@ TagManager:
   - 
   - 
   - Sweat
+<<<<<<< HEAD
   - 
+=======
+  - Player
+>>>>>>> origin/UmenaiPlayer
   - 
   - 
   - 
