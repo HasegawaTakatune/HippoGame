@@ -219,7 +219,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Aikei\Scripts\Destroy.cs" />
     <Compile Include="Assets\Aikei\Scripts\G1_GameManager.cs" />
     <Compile Include="Assets\Aikei\Scripts\G5_EnemyMeasure.cs" />
     <Compile Include="Assets\Aikei\Scripts\G6_OutSideTerritory.cs" />
@@ -235,8 +234,6 @@
     <Compile Include="Assets\Hasegawa\script\ObjectSpawner.cs" />
     <Compile Include="Assets\Hasegawa\script\Puddle.cs" />
     <Compile Include="Assets\Hasegawa\script\ReturnToTitle.cs" />
-    <Compile Include="Assets\Kawabata\Script\G2_PuddleSpwn.cs" />
-    <Compile Include="Assets\Kawabata\Script\G3_RockSpwn.cs" />
     <Compile Include="Assets\Kawabata\Script\G4_SweatSpwn.cs" />
     <Compile Include="Assets\Kawabata\Script\G8_Sweat.cs" />
     <Compile Include="Assets\Kawabata\Script\G9_SpreadSweat.cs" />
